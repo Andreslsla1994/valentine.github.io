@@ -25,72 +25,61 @@ const CardPage = () => {
   // Array de mensajes de San Valentín
   const valentineMessages = [
     {
-      title: 'Para ti, con amor',
-      message1: 'En este día especial, quiero recordarte lo importante que eres para mí.',
-      message2: 'Tu sonrisa ilumina mis días y tu amor llena mi corazón de felicidad.',
-      message3: 'Gracias por ser parte de mi vida. Te amo más de lo que las palabras pueden expresar.',
-      closing: 'Con todo mi cariño ❤️',
+      title: 'Holiiiiiii, tuuuuuu tuuuuuuuu XD',
+      message1: 'Primera vez que hago algo asi XD',
+      message2: 'Muy feliz por que el mundo del baile puso a una persona tan especial en mi vida',
+      message3: 'Agradecido por haber conicido a una persona tan especial y hermosa como tu',
+      closing: '❤️',
     },
     {
-      title: 'Mi corazón es tuyo',
-      message1: 'Cada día a tu lado es un regalo que atesoro con todo mi ser.',
-      message2: 'Tu amor transforma mi mundo y hace que cada momento sea especial.',
-      message3: 'Eres la razón por la que creo en el amor verdadero.',
-      closing: 'Eternamente agradecido 💕',
+      title: 'Gracias por todo lo vivido',
+      message1: 'Todo este tiempo fue nuevas experiencias para mi',
+      message2: 'Y mucho mejor con tu compañia',
+      message3: 'Gracias por ser parte de mi vida y mi corazón',
+      closing: '💕',
     },
     {
-      title: 'Eres mi todo',
-      message1: 'No hay palabras suficientes para expresar lo que siento por ti.',
+      title: 'Agradecido eternamente',
+      message1: 'Gracias por interesarte en las cosas que más aprecio y valoro',
       message2: 'Cada risa, cada mirada, cada momento contigo es un tesoro.',
-      message3: 'Eres la luz que guía mi camino y el amor que llena mi alma.',
-      closing: 'Con amor infinito 🌹',
+      message3: 'Gracias por todo el apoyo que me has dado',
+      closing: '🌹',
     },
     {
-      title: 'Mi razón de ser',
-      message1: 'Desde que llegaste a mi vida, todo tiene más sentido y color.',
-      message2: 'Tu amor es el motor que impulsa mis sueños y esperanzas.',
-      message3: 'Contigo he encontrado la felicidad que siempre busqué.',
-      closing: 'Siempre tuyo 💖',
+      title: 'Muy feliz',
+      message1: 'Muy feliz de ser testigo de tu progreso en todos los aspectos de tu vida.',
+      message2: 'Muy feliz de ser parte de tu vida',
+      message3: 'Quiero que sepas que cuantas conmigo para cualquier cosa',
+      closing: '💖',
     },
     {
-      title: 'Amor eterno',
-      message1: 'Cada latido de mi corazón lleva tu nombre escrito.',
-      message2: 'Eres mi compañero, mi mejor amigo y el amor de mi vida.',
-      message3: 'Juntos hemos creado algo hermoso que perdurará para siempre.',
-      closing: 'Por siempre y para siempre 💗',
+      title: 'Mirando hacia el futuro',
+      message1: 'Esperando muchos mas dias y experiencias juntos',
+      message2: 'Esperando muchas mas experiencias juntos',
+      message3: 'Esperando seguir comparatiendo muchos mas momentos juntos',
+      closing: '💗',
     },
     {
-      title: 'Mi tesoro',
-      message1: 'Eres la persona más especial que he conocido en toda mi vida.',
-      message2: 'Tu amor me hace sentir completo y me da fuerzas para todo.',
-      message3: 'Cada día contigo es una nueva aventura llena de amor y alegría.',
-      closing: 'Con todo mi amor 💝',
+      title: 'Feliz San Valentín. Te kelo muchochochochoteeeeeeee',
+      image: '/images/image.png',
     },
   ]
 
-  // URLs de imágenes de San Valentín
-  const valentineImages = [
-    'https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=300&h=300&fit=crop',
+  // Videos locales desde public/videos
+  const valentineVideos = [
+    '/videos/1.mp4',
+    '/videos/2.mp4',
+    '/videos/3.mp4',
+    '/videos/4.mp4',
+    '/videos/5.mp4',
+    '/videos/6.mp4',
+    '/videos/7.mp4',
+    '/videos/8.mp4',
   ]
 
   useEffect(() => {
-    // Inicializar posiciones aleatorias para las imágenes por toda la pantalla
-    const initialPositions: ImagePosition[] = valentineImages.map((_, index) => ({
+    // Inicializar posiciones aleatorias para los videos por toda la pantalla
+    const initialPositions: ImagePosition[] = valentineVideos.map((_, index) => ({
       id: index,
       x: Math.random() * (window.innerWidth - 200),
       y: Math.random() * (window.innerHeight - 200),
@@ -207,7 +196,7 @@ const CardPage = () => {
           overflow: 'hidden',
         }}
       >
-        {/* Imágenes flotantes por toda la pantalla */}
+        {/* Videos flotantes por toda la pantalla */}
         {imagePositions.map((pos) => (
           <motion.div
             key={pos.id}
@@ -233,9 +222,12 @@ const CardPage = () => {
             }}
           >
             <Box
-              component="img"
-              src={valentineImages[pos.id]}
-              alt={`Valentine ${pos.id + 1}`}
+              component="video"
+              src={valentineVideos[pos.id]}
+              autoPlay
+              loop
+              muted
+              playsInline
               sx={{
                 width: '100%',
                 height: '100%',
@@ -263,18 +255,18 @@ const CardPage = () => {
           }}
         >
           <Typography
-          variant="h3"
-          component="h1"
-          gutterBottom
-          sx={{
+            variant="h3"
+            component="h1"
+            gutterBottom
+            sx={{
               color: '#ff91c7',
-            fontWeight: 'bold',
-            mb: 4,
-            textAlign: 'center',
-          }}
-        >
-          💌 Para TUUUUUUUUU 💌
-        </Typography>
+              fontWeight: 'bold',
+              mb: 4,
+              textAlign: 'center',
+            }}
+          >
+            💌 Para TUUUUUUUUU 💌
+          </Typography>
 
           <Box
             sx={{
@@ -336,80 +328,122 @@ const CardPage = () => {
                       backfaceVisibility: 'hidden',
                     }}
                   >
-                    <motion.div
-                      key={messageIndex}
-                      variants={messageVariants}
-                      initial="hidden"
-                      animate="visible"
-                      style={{
-                        textAlign: 'center',
-                        transform: 'rotateY(180deg)',
-                        transformStyle: 'preserve-3d',
-                      }}
-                    >
-                      <FavoriteIcon sx={{ fontSize: 60, color: '#ff91c7', mb: 2 }} />
-                      <Typography
-                        variant="h5"
-                        sx={{
-                          color: '#ff91c7',
-                          fontWeight: 'bold',
-                          mb: 2,
+                    {
+                      currentMessage.image ? (
+                        <motion.div
+                          key={messageIndex}
+                          variants={messageVariants}
+                          initial="hidden"
+                          animate="visible"
+                          style={{
+                            textAlign: 'center',
+                            transform: 'rotateY(180deg)',
+                            transformStyle: 'preserve-3d',
+                          }}
+                        >
+                          <FavoriteIcon sx={{ fontSize: 60, color: '#ff91c7', mb: 2 }} />
+                          <Typography
+                            variant="h5"
+                            sx={{
+                              color: '#ff91c7',
+                              fontWeight: 'bold',
+                              mb: 2,
+                            }}
+                          >
+                            {currentMessage.title}
+                          </Typography>
+                          <Box
+                            component="img"
+                            src="/images/image.png"
+                            alt="Valentine"
+                            sx={{
+                              display: 'block',
+                              maxWidth: '100%',
+                              width: 'auto',
+                              height: 280,
+                              objectFit: 'contain',
+                              borderRadius: 2,
+                              mt: 1,
+                              mx: 'auto',
+                            }}
+                          />
+                        </motion.div>
+                      ) : (<motion.div
+                        key={messageIndex}
+                        variants={messageVariants}
+                        initial="hidden"
+                        animate="visible"
+                        style={{
+                          textAlign: 'center',
+                          transform: 'rotateY(180deg)',
+                          transformStyle: 'preserve-3d',
                         }}
                       >
-                        {currentMessage.title}
-                      </Typography>
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          color: '#d4a5c4',
-                          lineHeight: 1.8,
-                          mb: 2,
-                        }}
-                      >
-                        {currentMessage.message1}
-                      </Typography>
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          color: '#d4a5c4',
-                          lineHeight: 1.8,
-                          mb: 2,
-                        }}
-                      >
-                        {currentMessage.message2}
-                      </Typography>
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          color: '#d4a5c4',
-                          lineHeight: 1.8,
-                          mb: 2,
-                        }}
-                      >
-                        {currentMessage.message3}
-                      </Typography>
-                      <Typography
-                        variant="h6"
-                        sx={{
-                          color: '#ff91c7',
-                          mt: 3,
-                          fontWeight: 'bold',
-                        }}
-                      >
-                        {currentMessage.closing}
-                      </Typography>
-                      <Typography
-                        variant="caption"
-                        sx={{
-                          color: '#ff91c7',
-                          mt: 2,
-                          fontStyle: 'italic',
-                          opacity: 0.8,
-                        }}
-                      >
-                        💌 Haz clic para ver más mensajes
-                      </Typography>
-                    </motion.div>
+                        <FavoriteIcon sx={{ fontSize: 60, color: '#ff91c7', mb: 2 }} />
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            color: '#ff91c7',
+                            fontWeight: 'bold',
+                            mb: 2,
+                          }}
+                        >
+                          {currentMessage.title}
+                        </Typography>
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            color: '#d4a5c4',
+                            lineHeight: 1.8,
+                            mb: 2,
+                          }}
+                        >
+                          {currentMessage.message1}
+                        </Typography>
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            color: '#d4a5c4',
+                            lineHeight: 1.8,
+                            mb: 2,
+                          }}
+                        >
+                          {currentMessage.message2}
+                        </Typography>
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            color: '#d4a5c4',
+                            lineHeight: 1.8,
+                            mb: 2,
+                          }}
+                        >
+                          {currentMessage.message3}
+                        </Typography>
+                        <Typography
+                          variant="h6"
+                          sx={{
+                            color: '#ff91c7',
+                            mt: 3,
+                            fontWeight: 'bold',
+                          }}
+                        >
+                          {currentMessage.closing}
+                        </Typography>
+                        <Typography
+                          variant="caption"
+                          sx={{
+                            color: '#ff91c7',
+                            mt: 2,
+                            fontStyle: 'italic',
+                            opacity: 0.8,
+                          }}
+                        >
+                          💌 Haz clic para ver más mensajes
+                        </Typography>
+                      </motion.div>)
+                    }
+
                   </CardContent>
                 )}
               </Card>
