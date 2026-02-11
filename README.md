@@ -39,25 +39,21 @@ npm run build
 
 1. **Crea un repositorio en GitHub** (si aún no existe) con el nombre `valentines-day-page`. Si usas otro nombre, cambia `base` en `vite.config.ts` a `'/tu-nombre-repo/'`.
 
-2. **Sube el proyecto y activa Pages**:
-   - Inicializa git (si no lo has hecho): `git init`, añade los archivos y haz commit.
-   - Añade el remoto: `git remote add origin https://github.com/TU_USUARIO/valentines-day-page.git`
-   - Sube la rama: `git push -u origin main` (o `master` si usas esa rama).
+2. **Sube el proyecto**:
+   - `git init`, añade los archivos, commit y sube:  
+     `git remote add origin https://github.com/TU_USUARIO/valentines-day-page.git`  
+     `git push -u origin main` (o `master`).
 
-3. **Activa GitHub Pages con el workflow**:
+3. **Activa GitHub Pages** (después del primer push, cuando el workflow ya haya creado la rama `gh-pages`):
    - En el repo: **Settings → Pages**.
-   - En **Build and deployment**, en **Source** elige **GitHub Actions**.
+   - **Source**: "Deploy from a branch".
+   - **Branch**: `gh-pages` / **Folder**: `/ (root)` → Save.
 
-4. **Despliegue automático**: cada push a `main` ejecuta el workflow y publica la app. La URL quedará:  
-   `https://TU_USUARIO.github.io/valentines-day-page/`
+4. La app quedará en: `https://TU_USUARIO.github.io/valentines-day-page/`
 
-**Despliegue manual** (alternativa):
+El workflow se ejecuta en cada push a `main` o `master` y publica la carpeta `dist` en la rama `gh-pages`.
 
-```bash
-npm run deploy
-```
-
-Luego en **Settings → Pages** elige la rama `gh-pages` como fuente.
+**Despliegue manual**: `npm run deploy` (sube `dist` a `gh-pages`). Luego en **Settings → Pages** elige la rama `gh-pages` como fuente.
 
 ## Estructura del Proyecto
 
