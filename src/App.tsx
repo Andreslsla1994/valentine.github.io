@@ -8,6 +8,7 @@ function App() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
+        <Route path="/valentines-day-page" element={<CardPage />} />
         <Route path="/" element={<CardPage />} />
       </Routes>
     </AnimatePresence>

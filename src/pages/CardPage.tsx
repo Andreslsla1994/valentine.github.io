@@ -61,20 +61,20 @@ const CardPage = () => {
     },
     {
       title: 'Feliz San Valentín. Te kelo muchochochochoteeeeeeee',
-      image: '/images/image.png',
+      image: '/valentines-day-page/images/image.jpg',
     },
   ]
 
   // Videos locales desde public/videos
   const valentineVideos = [
-    '/videos/1.mp4',
-    '/videos/2.mp4',
-    '/videos/3.mp4',
-    '/videos/4.mp4',
-    '/videos/5.mp4',
-    '/videos/6.mp4',
-    '/videos/7.mp4',
-    '/videos/8.mp4',
+    '/valentines-day-page/videos/1.mp4',
+    '/valentines-day-page/videos/2.mp4',
+    '/valentines-day-page/videos/3.mp4',
+    '/valentines-day-page/videos/4.mp4',
+    '/valentines-day-page/videos/5.mp4',
+    '/valentines-day-page/videos/6.mp4',
+    '/valentines-day-page/videos/7.mp4',
+    '/valentines-day-page/videos/8.mp4',
   ]
 
   useEffect(() => {
@@ -190,7 +190,7 @@ const CardPage = () => {
         sx={{
           minHeight: '100vh',
           position: 'relative',
-          backgroundImage: 'url(/images/fondo.jpg)',
+          backgroundImage: 'url(/valentines-day-page/images/fondo.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           overflow: 'hidden',
@@ -354,12 +354,12 @@ const CardPage = () => {
                           </Typography>
                           <Box
                             component="img"
-                            src="/images/image.png"
+                            src="/valentines-day-page/images/image.jpg"
                             alt="Valentine"
                             sx={{
                               display: 'block',
                               maxWidth: '100%',
-                              width: 'auto',
+                              width: 150,
                               height: 280,
                               objectFit: 'contain',
                               borderRadius: 2,
