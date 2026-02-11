@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 // base must match your GitHub repo name for GitHub Pages (e.g. /valentines-day-page/)
 export default defineConfig({
-  base: '/valentine/',
   plugins: [react()],
+  base: '/valentine/',
 })
 
