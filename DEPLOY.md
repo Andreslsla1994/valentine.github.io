@@ -1,5 +1,7 @@
 # Fix "There isn't a GitHub Pages site here"
 
+**Most often this happens because GitHub Pages is not set to use the `gh-pages` branch.** Do step 3 below.
+
 Follow these steps **in order**:
 
 ## 1. Push the workflow and trigger a deploy
@@ -25,28 +27,30 @@ npm run deploy
 
 This pushes the contents of `dist` to the `gh-pages` branch.
 
-## 3. Turn on GitHub Pages in the repo
+## 3. Turn on GitHub Pages (this fixes “There isn’t a GitHub Pages site here”)
 
-1. Open your repo on GitHub.
-2. Go to **Settings** → **Pages** (in the left sidebar).
+**You must set the source in the repo settings.** Otherwise GitHub shows “There isn’t a GitHub Pages site here”.
+
+1. On GitHub, open your repo **valentines-day-page**.
+2. Go to **Settings** (tab at the top) → **Pages** (left sidebar under “Code and automation”).
 3. Under **Build and deployment**:
-   - **Source**: choose **Deploy from a branch**.
-   - **Branch**: select **gh-pages**.
-   - **Folder**: select **/ (root)**.
-4. Click **Save**.
+   - **Source**: choose **“Deploy from a branch”** (not “GitHub Actions”).
+   - **Branch**: open the dropdown → choose **“gh-pages”**.
+   - **Folder**: choose **“/ (root)”**.
+4. Click **Save**. The page will show something like: “Your site is live at https://YOUR_USERNAME.github.io/valentines-day-page/”.
 
-## 4. Wait and open the site
+## 4. Open your site
 
 After 1–2 minutes, open:
 
-**https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/**
+**https://YOUR_USERNAME.github.io/valentines-day-page/**
 
-Your `vite.config.ts` has `base: '/valentine/'`, so if the repo is `valentine`, the URL is:
+(Replace YOUR_USERNAME with your GitHub username.)
 
-**https://YOUR_USERNAME.github.io/valentine/**
+---
 
-If you still see "There isn't a GitHub Pages site here", check:
+**If it still says “There isn’t a GitHub Pages site here”:**
 
-- **Actions** tab: the "Deploy to GitHub Pages" workflow run completed successfully.
-- **Branches**: the `gh-pages` branch exists and has files (e.g. `index.html`, `assets/`).
-- **Settings → Pages**: source is "Deploy from a branch", branch is `gh-pages`, folder is `/ (root)`.
+- **Actions** tab: confirm the workflow **“Deploy to GitHub Pages”** ran and **succeeded** (green check). If it failed, fix the error and push again.
+- **Branches**: confirm the **gh-pages** branch exists (after a successful workflow run). If it’s missing, run `npm run build` then `npm run deploy` locally and push, then repeat step 3 above.
+- **Settings → Pages**: source must be **“Deploy from a branch”**, branch **gh-pages**, folder **/ (root)**.
